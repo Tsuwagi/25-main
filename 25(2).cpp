@@ -8,11 +8,11 @@ int main() {
     puts("Enter sentence:");
     gets_s(s);
 
-    while (s[i]) {
+    while (s[i] != '\0') {
         if (s[i] != ' ')
             wr[j++] = s[i];
         else {
-            wr[j] = 0;
+            wr[j] = '\0';
             if (strlen(wr) > 6)
                 if (strlen(result)) strcat(result, " ");
                 strcat(result, wr);
@@ -21,7 +21,7 @@ int main() {
         i++;
     }
 
-    wr[j] = 0;
+    wr[j] = '\0';
     if (strlen(wr) > 6)
         if (strlen(result)) strcat(result, " ");
         strcat(result, wr);
