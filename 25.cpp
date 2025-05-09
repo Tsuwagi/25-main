@@ -1,3 +1,5 @@
+//	Вивести перше слово введеного рядка у зворотному порядку
+
 #include <iostream>
 using namespace std;
 
