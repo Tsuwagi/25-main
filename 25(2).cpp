@@ -22,11 +22,5 @@ int main() {
         }
         i++;
     }
-
-    wr[j] = '\0';
-    if (strlen(wr) > 6)
-        if (strlen(result)) strcat(result, " ");
-        strcat(result, wr);
-
     cout << "Result: " << result << endl;
 }
