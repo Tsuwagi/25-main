@@ -16,7 +16,7 @@ int main() {
         else {
             wr[j] = '\0';
             if (strlen(wr) > 6)
-                if (strlen(result)) strcat(result, " ");
+                (strlen(result)) strcat(result, " ");
                 strcat(result, wr);
             j = 0;
         }
