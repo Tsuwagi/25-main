@@ -15,10 +15,10 @@ int main() {
             wr[j++] = s[i];
         else {
             wr[j] = '\0';
-            if (strlen(wr) > 6)
+            if (strlen(wr) > 6){
                 strcat(result, " ");
-            else
                 strcat(result, wr);
+            }
             j = 0;
         }
         i++;
