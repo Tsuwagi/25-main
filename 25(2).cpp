@@ -1,5 +1,3 @@
-//	Створити новий рядок зі слів введеного рядка, довжина яких більше 6-ти
-
 #include <iostream>
 using namespace std;
 
@@ -8,17 +6,17 @@ int main() {
     int i = 0, j = 0;
 
     puts("Enter sentence:");
-    gets_s(s);
+    cin.getline(s,100);
 
     while (s[i] != '\0') {
         if (s[i] != ' ')
             wr[j++] = s[i];
         else {
             wr[j] = '\0';
-            if (strlen(wr) > 6){
-                strcat(result, " ");
-                strcat(result, wr);
-            }
+           // if (strlen(wr) > 6 )
+                //if(strlen(result) > 0 )
+                    //strcat(result, " ");
+            // strcat(result, wr);
             j = 0;
         }
         i++;
